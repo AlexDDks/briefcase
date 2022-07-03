@@ -3,21 +3,32 @@
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
+
     background-image: url('/img/javier-miranda-nc1zsYGkLFA-unsplash.jpg');
     background-size: cover;
     /* border: 2px red solid; */
     width: 100vw;
     height: 100vh;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+div img {
+    display: line;
+    width: 12vw;
+    padding: 2vw;
 }
 
 .allItems {
+    margin-left: 13vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 0;
+    width: 50vw;
 }
 
 .welcome {
@@ -45,13 +56,13 @@ div button {
     padding: .25vw .5vw;
     font-size: 2.5vw;
     border-radius: 1vw;
-    background-color: transparent;
-    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgb(20, 29, 46);
     transition: all 450ms;
 }
 
 div button:hover {
-    background-color: rgb(20 29 46);
+
+    background-color: rgb(18, 23, 36);
 }
 
 a {
