@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-.firstArticle {
+header {
     display: flex;
     align-items: center;
 }
@@ -20,7 +20,7 @@ body {
     margin: 2vw;
 }
 
-body section article div button {
+button {
     width: 10vw;
     height: 3vw;
     margin-left: 33vw;
