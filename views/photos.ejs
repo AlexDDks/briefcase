@@ -12,7 +12,8 @@
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&family=Splash&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">}
+    <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>+
     <title>Photos</title>
 </head>
 
@@ -35,16 +36,60 @@
 
     <section class="allItems">
 
-        <article class="headerPhoto">
+        <article class="containerSlider" id="slider">
 
-            <div>
-                <img class="mainPhoto" src="/img/photos/IMG_1259.JPG" alt="mainPhoto">
+            <div class="slider" id="slider">
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/IMG_1259.JPG" alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/13880195_1668299693496027_6761420845496651718_n.jpg"
+                        alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/74645264_583769562434727_2305446094106001408_o.jpg"
+                        alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/IMG_0832.jpg" alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/IMG_0140.jpg" alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/IMG_1580-editada.jpg" alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/IMG_0220.jpg" alt="mainPhoto">
+                </div>
+
+                <div class="sliderSection">
+                    <img class="sliderImg" src="/img/photos/10710743_1584577915201539_8669849898598436221_n.jpg"
+                        alt="mainPhoto">
+                </div>
+
+            </div>
+
+            <div class="sliderButtonRight">
+                <i class="fa-solid fa-circle-right" id="sliderButtonRight"></i>
+            </div>
+
+            <div class="sliderButtonLeft">
+                <i class="fa-solid fa-circle-left" id="sliderButtonLeft"></i>
             </div>
 
         </article>
 
 
-        <article class="secondArticle">
+
+        <!-- <article class="secondArticle">
 
             <div>
                 <img src="" alt="picture1">
@@ -62,9 +107,11 @@
                 <img src="" alt="picture4">
             </div>
 
-        </article>
+        </article> -->
 
     </section>
+
+    <script src="../slider.js"></script>
 
 </body>
 

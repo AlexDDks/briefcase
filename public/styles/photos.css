@@ -31,13 +31,83 @@ button {
     margin-left: 33vw;
 }
 
-section article .mainPhoto {
-    width: 40vw;
-    margin-left: 30vw;
-    margin-bottom: 4vw;
-    border: 2px white solid;
-    border-radius: 5vw;
+
+.containerSlider {
+    width: 80vw;
+    max-width: 900px;
+    margin: auto;
+    /* overflow: hidden; */
+    border: 5px white solid;
+    position: relative;
 }
+
+.slider {
+    display: flex;
+    height: 40vh;
+    width: 800%;
+}
+
+.sliderSection {
+    width: 100%;
+}
+
+.sliderImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sliderButtonRight,
+.sliderButtonLeft {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.55);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.sliderButtonRight {
+    right: 1vw;
+}
+
+.sliderButtonLeft {
+    left: 1vw;
+}
+
+.containerSlider i {
+    font-size: 3vw;
+    transition: all 200ms;
+}
+
+.containerSlider i:hover {
+    color: rgba(255, 255, 255, 0.90);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .secondArticle {
     display: flex;

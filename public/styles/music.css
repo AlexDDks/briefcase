@@ -35,3 +35,11 @@ button {
 .allSongs img {
     width: 15vw;
 }
+
+section article div img {
+    transition: all 350ms;
+}
+
+section article div img:hover {
+    margin: 1vw;
+}
