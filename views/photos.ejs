@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/photos.css">
-    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&family=Splash&display=swap"
-        rel="stylesheet">}
-    <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>+
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
     <title>Photos</title>
 </head>
 
@@ -26,7 +26,7 @@
         </div>
 
         <div class="textHeader">
-            <button> Who I am? </button>
+            <button class="buttonWhoIam"> Who I am? </button>
             <!-- <h1>Welcome to my place...</h1>
         <p>I'm Alex, a passionate Engineer, lover of the technology and arts</p> -->
         </div>
@@ -36,54 +36,63 @@
 
     <section class="allItems">
 
-        <article class="containerSlider" id="slider">
+        <article class="containerAll">
 
-            <div class="slider" id="slider">
+            <input type="radio" id="1" name="image-slide" hidden>
+            <input type="radio" id="2" name="image-slide" hidden>
+            <input type="radio" id="3" name="image-slide" hidden>
+            <input type="radio" id="4" name="image-slide" hidden>
+            <input type="radio" id="5" name="image-slide" hidden>
 
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/IMG_1259.JPG" alt="mainPhoto">
+
+            <div class="slider">
+
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img1Slider.jpg" alt="mainPhoto">
                 </div>
 
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/13880195_1668299693496027_6761420845496651718_n.jpg"
-                        alt="mainPhoto">
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img3Slider.jpg" alt="photoSlider">
                 </div>
 
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/74645264_583769562434727_2305446094106001408_o.jpg"
-                        alt="mainPhoto">
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img2Slider.jpg" alt="photoSlider">
                 </div>
 
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/IMG_0832.jpg" alt="mainPhoto">
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img6Slider.jpg" alt="photoSlider">
                 </div>
 
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/IMG_0140.jpg" alt="mainPhoto">
-                </div>
-
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/IMG_1580-editada.jpg" alt="mainPhoto">
-                </div>
-
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/IMG_0220.jpg" alt="mainPhoto">
-                </div>
-
-                <div class="sliderSection">
-                    <img class="sliderImg" src="/img/photos/10710743_1584577915201539_8669849898598436221_n.jpg"
-                        alt="mainPhoto">
+                <div class="itemSlider" id="sliderSection">
+                    <img class="imgSlider" src="/img/photos/slider/img7Slider.jpg" alt="photoSlider">
                 </div>
 
             </div>
 
-            <div class="sliderButtonRight">
-                <i class="fa-solid fa-circle-right" id="sliderButtonRight"></i>
+            <div class="pagination">
+
+                <label class="paginationItem" for="1"> <img src="" alt="">
+                    <img src="/img/photos/slider/img1Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="2"> <img src="" alt="">
+                    <img src="/img/photos/slider/img3Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="3"> <img src="" alt="">
+                    <img src="/img/photos/slider/img2Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="4"> <img src="" alt="">
+                    <img src="/img/photos/slider/img6Slider.jpg" alt="photoRadio">
+                </label>
+
+                <label class="paginationItem" for="5"> <img src="" alt="">
+                    <img src="/img/photos/slider/img7Slider.jpg" alt="photoRadio">
+                </label>
+
             </div>
 
-            <div class="sliderButtonLeft">
-                <i class="fa-solid fa-circle-left" id="sliderButtonLeft"></i>
-            </div>
 
         </article>
 
@@ -107,11 +116,10 @@
                 <img src="" alt="picture4">
             </div>
 
-        </article> -->
+        </article> 
 
     </section>
 
-    <script src="../slider.js"></script>
 
 </body>
 

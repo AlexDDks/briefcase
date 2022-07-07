@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     background-color: black;
 }
 
@@ -15,101 +15,179 @@ body {
     margin: 2vw;
 }
 
-.divHeader i {
-    color: white;
-}
-
 header {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-button {
+.buttonWhoIam {
     width: 10vw;
     height: 3vw;
     margin-left: 33vw;
+    margin-right: 0;
 }
 
-
-.containerSlider {
-    width: 80vw;
-    max-width: 900px;
-    margin: auto;
-    /* overflow: hidden; */
-    border: 5px white solid;
+.containerAll {
+    width: 100%;
     position: relative;
+    max-width: 1280px;
+    border-radius: 0.5%;
+    overflow: hidden;
+}
+
+body section {
+    padding: 0% 25% 0% 25%;
 }
 
 .slider {
     display: flex;
-    height: 40vh;
-    width: 800%;
+    transform: translate3d(0, 0, 0);
+    transition: all 500ms;
+    animation-name: autoplay;
+    animation-duration: 1000ms;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-.sliderSection {
-    width: 100%;
+img {
+    max-width: 100%;
 }
 
-.sliderImg {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.itemSlider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
 }
 
+.imgSlider {
+    border: 2px solid white;
+    padding: 2%;
+    border-radius: 10px;
 
-.sliderButtonRight,
-.sliderButtonLeft {
+}
+
+.pagination {
     position: absolute;
-    color: rgba(255, 255, 255, 0.55);
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paginationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2%;
+    overflow: hidden;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.489);
+    text-align: center;
+    margin: 0 1%;
+    transition: all 300ms;
 }
 
-.sliderButtonRight {
-    right: 1vw;
+.paginationItem:hover {
+    transform: scale(2);
 }
 
-.sliderButtonLeft {
-    left: 1vw;
+.paginationItem img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300 ms;
 }
 
-.containerSlider i {
-    font-size: 3vw;
-    transition: all 200ms;
+.paginationItem:hover img {
+    opacity: 1;
+    transform: scale(1);
 }
 
-.containerSlider i:hover {
-    color: rgba(255, 255, 255, 0.90);
+input[id="1"]:checked~.slider {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked~.pagination .paginationItem[for="1"] {
+    background-color: white;
 }
 
 
+input[id="2"]:checked~.slider {
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
 
+input[id="2"]:checked~.pagination .paginationItem[for="2"] {
+    background-color: white;
+}
 
+input[id="3"]:checked~.slider {
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
 
+input[id="3"]:checked~.pagination .paginationItem[for="3"] {
+    background-color: white;
+}
 
+input[id="4"]:checked~.slider {
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+}
 
+input[id="4"]:checked~.pagination .paginationItem[for="4"] {
+    background-color: white;
+}
 
+input[id="5"]:checked~.slider {
+    animation: none;
+    transform: translate3d(calc(-100% * 4), 0, 0);
+}
 
+input[id="5"]:checked~.pagination .paginationItem[for="5"] {
+    background-color: white;
+}
 
+@keyframes autoplay {
+    20% {
+        transform: translate3d(calc(-100 * 0) 0, 0);
+    }
 
+    40% {
+        transform: translate3d(calc(-100 * 1) 0, 0);
+    }
 
+    60% {
+        transform: translate3d(calc(-100 * 2) 0, 0);
+    }
 
+    80% {
+        transform: translate3d(calc(-100 * 3) 0, 0);
+    }
 
+    100% {
+        transform: translate3d(calc(-100 * 4) 0, 0);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
+/* 
 .secondArticle {
     display: flex;
     justify-content: space-evenly;
-}
+} */
