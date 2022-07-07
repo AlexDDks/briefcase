@@ -28,6 +28,11 @@ header {
     height: 3vw;
     margin-left: 33vw;
     margin-right: 0;
+    transition: all 350ms;
+}
+
+.buttonWhoIam:hover {
+    transform: scale(1.2);
 }
 
 .containerAll {
@@ -51,6 +56,7 @@ body section {
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    margin-bottom: 2vw;
 }
 
 img {
@@ -64,18 +70,18 @@ img {
     flex-shrink: 0;
     flex-grow: 0;
     max-width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 .imgSlider {
-    border: 2px solid white;
-    padding: 2%;
+    margin: 2%;
     border-radius: 10px;
-
 }
 
 .pagination {
     position: absolute;
-    bottom: 10%;
+    bottom: 12%;
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -166,19 +172,19 @@ input[id="5"]:checked~.pagination .paginationItem[for="5"] {
 }
 
 @keyframes autoplay {
-    20% {
+    10% {
         transform: translate3d(calc(-100% * 0), 0, 0);
     }
 
-    40% {
+    32.5% {
         transform: translate3d(calc(-100% * 1), 0, 0);
     }
 
-    60% {
+    55% {
         transform: translate3d(calc(-100% * 2), 0, 0);
     }
 
-    80% {
+    77.5% {
         transform: translate3d(calc(-100% * 3), 0, 0)
     }
 
@@ -187,8 +193,34 @@ input[id="5"]:checked~.pagination .paginationItem[for="5"] {
     }
 }
 
-/* 
 .secondArticle {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2vw;
+    justify-content: space-evenly;
+}
+
+.itemSliderBottom {
+    width: 15%;
+}
+
+.imgSliderBottom {
+    border: 2px solid rgba(255, 255, 255, 0.816);
+    border-radius: 5%;
+    transition: all 1 ms;
+
+}
+
+.imgSliderBottom:hover {
+    transform: scale(1.2);
+    border: 3px solid rgba(255, 255, 255, 0.816);
+
+}
+
+/* @keyframes autoScale {
+
+    100% {
+        transform: scale(1.2)
+    }
+
 } */

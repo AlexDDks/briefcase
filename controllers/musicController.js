@@ -1,6 +1,6 @@
 const controller = {
-    index: (req, res) => {
-        res.render('index')
+    music: (req, res) => {
+        res.render('music')
     }
 }
 

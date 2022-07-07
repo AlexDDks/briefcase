@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const mainController = require('../controllers/mainController');
+const musicController = require('../controllers/musicController');
 
-router.get('/', mainController.index)
+
+router.get('/', musicController.music)
 
 //Aun no entiendo porque se exporta la variable router
 module.exports = router;

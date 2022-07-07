@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const mainController = require('../controllers/mainController');
+const photosController = require('../controllers/photosController');
 
-router.get('/', mainController.index)
+
+router.get('/', photosController.photos)
+
 
 //Aun no entiendo porque se exporta la variable router
 module.exports = router;

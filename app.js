@@ -12,11 +12,13 @@ app.set('view engine', 'ejs');
 
 /////////////Routes/////////////
 const mainRouter = require('./routes/mainRouter')
+const photosRouter = require('./routes/photosRouter')
+const musicRouter = require('./routes/musicRouter')
 
 /////////////Router paths/////////////
 app.use('/', mainRouter)
-
-
+app.use('/photos', photosRouter)
+app.use('/music', musicRouter)
 
 
 
