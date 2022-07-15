@@ -7,7 +7,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    background-color: black;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }
 
 header {
@@ -15,15 +16,46 @@ header {
     align-items: center;
 }
 
+.divIcons {
+    display: flex;
+    justify-content: center;
+    height: 2vw;
+}
+
+body header div i {
+    display: block;
+    color: white;
+    font-size: 2vw;
+    opacity: 1;
+}
+
 .logo {
-    width: 8vw;
-    margin: 2vw;
+    width: 12vw;
+    padding: 2vw 2vw 0 2vw;
+}
+
+.divLogo {
+    transition: all 350ms;
+}
+
+.divLogo:hover {
+    transform: scale(1.2);
 }
 
 button {
-    width: 10vw;
+    width: 14vw;
     height: 3vw;
-    margin-left: 33vw;
+    margin-left: 31vw;
+    font-size: 1.35vw;
+    transition: all 350ms;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.allItems {
+    padding-top: 3vw;
 }
 
 .allSongs {
@@ -37,6 +69,8 @@ button {
 }
 
 section article div img {
+    border: 3px solid white;
+    border-radius: 5%;
     transition: all 350ms;
 }
 

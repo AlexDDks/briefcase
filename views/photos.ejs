@@ -23,13 +23,22 @@
 
         <div class="divHeader">
             <a href="/"> <img class="logo" src="/img/logoWhite.png" alt=""></a>
+            <div class="divIcons">
+                <a href="/"> <i class="fa-solid fa-arrow-left-long"></i></a>
+            </div>
         </div>
 
-        <div class="textHeader">
-            <button class="buttonWhoIam"> Who I am? </button>
-            <!-- <h1>Welcome to my place...</h1>
-        <p>I'm Alex, a passionate Engineer, lover of the technology and arts</p> -->
-        </div>
+        <div class="radios">
+            <input type="radio" class="buttonWhoIam" id="openModal" name="modal">
+            <label class="labelOpenModal" for="openModal"><p>Who I am?</p> </label></input>
+            
+            <input type="radio" class="buttonCloseWhoIam" id="closeModal" name="modal">
+            <label for="closeModal"><p>X</p></label></input>
+         </div>
+
+         <div class="modal" id="modal" name="modal">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consequatur at tempora aliquam dignissimos nam error officiis iusto accusamus nemo, illum pariatur incidunt iste beatae enim impedit nisi omnis necessitatibus modi aperiam? Ipsum mollitia et modi consequuntur qui eos odit!</p>
+         </div>
 
     </header>
 
@@ -101,19 +110,23 @@
         <article class="secondArticle">
 
             <div class="itemSliderBottom">
-                <img class="imgSliderBottom" src="/img/photos/slider/img1Slider.jpg" alt="">
+                <a href="/photos/photo1"><img class="imgSliderBottom" src="/img/photos/slider/img1Slider.jpg"
+                        alt=""></a>
             </div>
 
             <div class="itemSliderBottom">
-                <img class="imgSliderBottom" src="/img/photos/slider/img3Slider.jpg" alt="">
+                <a href="/photos/photo2"> <img class="imgSliderBottom" src="/img/photos/slider/img3Slider.jpg"
+                        alt=""></a>
             </div>
 
             <div class="itemSliderBottom">
-                <img class="imgSliderBottom" src="/img/photos/slider/img2Slider.jpg" alt="">
+                <a href="/photos/photo3"><img class="imgSliderBottom" src="/img/photos/slider/img2Slider.jpg"
+                        alt=""></a>
             </div>
 
             <div class="itemSliderBottom">
-                <img class="imgSliderBottom" src="/img/photos/slider/img6Slider.jpg" alt="">
+                <a href="/photos/photo4"><img class="imgSliderBottom" src="/img/photos/slider/img6Slider.jpg"
+                        alt=""></a>
             </div>
 
             <div class="itemSliderBottom">

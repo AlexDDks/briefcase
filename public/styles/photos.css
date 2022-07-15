@@ -10,9 +10,30 @@ body {
     background-color: black;
 }
 
+.divIcons {
+    display: flex;
+    justify-content: center;
+    height: 2vw;
+}
+
+body header div i {
+    display: block;
+    color: white;
+    font-size: 2vw;
+    opacity: 1;
+}
+
+.divHeader {
+    transition: all 350ms;
+}
+
+.divHeader:hover {
+    transform: scale(1.2);
+}
+
 .logo {
-    width: 8vw;
-    margin: 2vw;
+    width: 12vw;
+    padding: 2vw 2vw 0 2vw;
 }
 
 header {
@@ -23,12 +44,64 @@ header {
     width: 100%;
 }
 
-.buttonWhoIam {
-    width: 10vw;
-    height: 3vw;
-    margin-left: 33vw;
-    margin-right: 0;
-    transition: all 350ms;
+.radios{
+    border: 2px red solid;
+    width: 20vw;
+    background-color: rgb(96, 96, 238);
+    margin-left: 28vw;
+}
+
+.modal{
+    background-color: black;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+   .modal p {
+    width: 55%;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin: 0;  
+    position: absolute;
+    left: 22.5%;
+     top: 50%;
+    transform: translateY(-50%);
+ }
+
+ #openModal{
+    display: block;
+    }
+
+.buttonWhoIam:checked~body{
+    background-color: white;
+}
+
+.labelOpenModal{
+        display: table;
+        line-height:3;
+        padding:0 1em;
+        text-transform:uppercase;
+        background-color:white;
+        cursor: pointer;
+        border: 2px red solid;
+    }
+ 
+
+
+
+
+
+
+
+
+
+.presentation {
+    display: none;
 }
 
 .buttonWhoIam:hover {
@@ -207,13 +280,12 @@ input[id="5"]:checked~.pagination .paginationItem[for="5"] {
 .imgSliderBottom {
     border: 2px solid rgba(255, 255, 255, 0.816);
     border-radius: 5%;
-    transition: all 1 ms;
+    transition: all 300ms;
 
 }
 
 .imgSliderBottom:hover {
     transform: scale(1.2);
-    border: 3px solid rgba(255, 255, 255, 0.816);
 
 }
 
