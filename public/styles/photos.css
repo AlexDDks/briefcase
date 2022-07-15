@@ -50,8 +50,11 @@ header {
     background-color: rgb(96, 96, 238);
     margin-left: 28vw;
 }
+label{
+    color:white
+}
 
-.modal{
+.container__modal{
     background-color: black;
     position: fixed;
     top: -70vh;
@@ -74,19 +77,34 @@ header {
     transform: translateY(-50%);
  }
 
-.labelOpenModal{
-        display: table;
-        line-height:3;
-        padding:0 1em;
-        text-transform:uppercase;
-        background-color:white;
-        cursor: pointer;
-        border: 2px red solid;
+
+/* Evento click */
+#openModal{
+    display: none;
 }
 
-input[id="openModal"]:checked~body {
-    background-color: aqua;
+
+#openModal:checked ~ .container__modal{
+    top: 50%;
+    visibility: visible;
 }
+
+#openModal:checked ~ .btn__open-modal{
+    top: -80px;
+}
+
+#openModal:checked ~ .background__blur{
+    background-image: url("https://cdn.pixabay.com/photo/2018/06/19/17/21/cruise-ship-3484854_960_720.jpg");
+    filter: blur(5px);
+}
+
+
+
+
+
+
+
+
 
 .presentation {
     display: none;
@@ -284,3 +302,8 @@ input[id="5"]:checked~.pagination .paginationItem[for="5"] {
     }
 
 } */
+
+
+
+
+
