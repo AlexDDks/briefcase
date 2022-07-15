@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .divIcons {
@@ -42,10 +42,10 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
+    border: 2px red solid;
 }
 
 .radios{
-    border: 2px red solid;
     width: 20vw;
     background-color: rgb(96, 96, 238);
     margin-left: 28vw;
@@ -54,13 +54,14 @@ header {
 .modal{
     background-color: black;
     position: fixed;
-    top: -100vh;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    top: -70vh;
+    left: 15vw;
+    width: 70%;
+    height: 70vh;
     z-index: 10;
+    border-radius: 5%;
+    /* visibility: hidden; Este atributo permite hacer la animación de desplegue, el display none, no */
 }
-
    .modal p {
     width: 55%;
     text-align: center;
@@ -73,14 +74,6 @@ header {
     transform: translateY(-50%);
  }
 
- #openModal{
-    display: block;
-    }
-
-.buttonWhoIam:checked~body{
-    background-color: white;
-}
-
 .labelOpenModal{
         display: table;
         line-height:3;
@@ -89,16 +82,11 @@ header {
         background-color:white;
         cursor: pointer;
         border: 2px red solid;
-    }
- 
+}
 
-
-
-
-
-
-
-
+input[id="openModal"]:checked~body {
+    background-color: aqua;
+}
 
 .presentation {
     display: none;

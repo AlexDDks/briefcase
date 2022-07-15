@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Koulen&family=Orbitron:wght@500&family=Roboto:wght@300&family=Splash&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
+    
     <title>Photos</title>
 </head>
 
@@ -29,11 +30,11 @@
         </div>
 
         <div class="radios">
-            <input type="radio" class="buttonWhoIam" id="openModal" name="modal">
-            <label class="labelOpenModal" for="openModal"><p>Who I am?</p> </label></input>
+            <input type="checkbox" class="buttonOpenWhoIam" id="openModal"></input> <!--Sólo label tiene atributo for-->
+          <label class="labelOpenModal" for="openModal"><p>Who I am?</p></label>
             
-            <input type="radio" class="buttonCloseWhoIam" id="closeModal" name="modal">
-            <label for="closeModal"><p>X</p></label></input>
+            <input type="checkbox" class="buttonCloseWhoIam" id="openModal"></input>
+            <label for="closeModal"><p>X</p></label>
          </div>
 
          <div class="modal" id="modal" name="modal">
@@ -41,7 +42,6 @@
          </div>
 
     </header>
-
 
     <section class="allItems">
 
