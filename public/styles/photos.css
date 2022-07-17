@@ -50,7 +50,6 @@ header label p{
     color: rgb(0, 0, 0);
     background-color: white;
     padding: 0.7vw;
-    border: 2px red dotted;
     border-radius: 8vw;
     width: 9vw;
     text-align: center;
@@ -59,7 +58,8 @@ header label p{
 
 
 
-.container__modal{
+.containerModal{
+    border: 2px red solid;
     background-color: black;
     position: fixed;
     top: -70vh;
@@ -89,9 +89,8 @@ header label p{
 }
 
 
-#openModal:checked ~ .container__modal{
-    top: 50%;
-    visibility: visible;
+#openModal:checked ~ .containerModal{
+    top: 15vh;
 }
 
 #openModal:checked ~ .btn__open-modal{
