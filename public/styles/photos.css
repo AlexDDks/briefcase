@@ -42,17 +42,22 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    border: 2px red solid;
 }
 
-.radios{
-    width: 20vw;
-    background-color: rgb(96, 96, 238);
-    margin-left: 28vw;
-}
-label{
-    color:white
-}
+header label p{
+    /* para que tenga funcionalidades de bloque, le ponemos display block */
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 0.7vw;
+    border: 2px red dotted;
+    border-radius: 8vw;
+    width: 9vw;
+    text-align: center;
+    margin-left: 33.5vw;
+    }
+
+
 
 .container__modal{
     background-color: black;
