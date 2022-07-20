@@ -61,7 +61,7 @@ div button {
 
 div button:hover {
     background-color: rgba(255, 255, 255, 0.83);
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 a {
@@ -73,4 +73,24 @@ a {
 
 a:hover {
     color: black;
+}
+
+.adressId{
+    position: absolute;
+    right: 2vw;
+    top: 4.3vw;
+    /* Para que el ícono quede centrado respecto al logo, tomando en cuenta que mide de alto 3.4 vw, y el logo 12 vw(con su padding) */
+    
+}
+
+.adressId i{
+    color: rgba(255, 255, 255, 0.9);
+    height: 3.4vw;
+    font-size: 3vw;
+    transition: all 250ms;
+    /* Por alguna razón no acepta el hover de cambiar color y de la transición en ms, lo hace inmediatamente */
+}
+
+.adressId:hover{
+    transform: scale(1.1);
 }
