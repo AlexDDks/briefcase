@@ -7,13 +7,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 100vw;
     background-color: rgb(0, 0, 0);
-}
-
-.divIcons {
-    display: flex;
-    justify-content: center;
-    height: 2vw;
 }
 
 body header div i {
@@ -28,12 +23,12 @@ body header div i {
 }
 
 .divHeader:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .logo {
     width: 12vw;
-    padding: 2vw 2vw 0 2vw;
+    padding: 2vw;
 }
 
 header {
@@ -41,49 +36,82 @@ header {
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
 }
 
 .btnOpenModal{
+    /* Esto es para que desaparezca el botón */
+    position: relative;
     /* para que tenga funcionalidades de bloque, le ponemos display block */
     display: block;
     color: rgb(0, 0, 0);
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 0.25vw;
     border-radius: 8vw;
     width: 9vw;
     text-align: center;
     margin-left: 33.5vw;
+    transition: all 250ms;
     }
+
+ .btnOpenModal:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 1);
+ }
 
 .btnCloseModal{
         display: block;
         color: rgb(0, 0, 0);
-        background-color: white;
-        padding: 0.25vw;
-        border-radius: 8vw;
         width: 6vw;
         text-align: center;
         position: absolute;
-        right: -4.3%;
-        top: -4.3%;
-              }
+        right: -1%;
+        top: 2%;
+}
 
 .containerModal{
-    border: 2px red solid;
     background-color: black;
     position: fixed;
-    top: -70vh;
+    top: -100vh;
     left: 15vw;
-    width: 70vw;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     z-index: 10;
-    border-radius: 5%;
-    /* visibility: hidden; Este atributo permite hacer la animación de desplegue, el display none, no */
+    visibility: hidden;
+
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.739);
+
+    position: absolute;
+    left: 0%;
+
+    border: 2px rgb(255, 255, 0) solid;
+
+    /* Este atributo permite hacer la animación de desplegue, el display none, no */
 }
 
 .titleModal, .messageModal{
     color: white;
+}
+
+.adressId{
+    position: absolute;
+    right: 2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.adressId i{
+font-size: 3vw;
+color: rgba(255, 255, 255, 0.9);
+transition: all 250ms;
+}
+    
+.adressId:hover{
+    transform: scale(1.1);
 }
 
 
@@ -93,20 +121,15 @@ header {
 }
 
 #openModal:checked ~ .containerModal{
-    top: 15vh;
+    top:0%;
+    visibility: visible;
 }
 
 #openModal:checked ~ .btnOpenModal{
-    top: -80px;
-}
-
-#openModal:checked ~ body{
-    backdrop-filter: blur(5px);
+    top: -100vw;
 }
 
 /* Finaliza evento click */
-
-
 
 
 .presentation {

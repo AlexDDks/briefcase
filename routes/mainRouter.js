@@ -3,8 +3,7 @@ const router = express.Router();
 const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.index)
-router.get('/prueba', mainController.prueba)
-
+router.get('/contact', mainController.contact)
 
 
 module.exports = router;
