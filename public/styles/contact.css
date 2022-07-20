@@ -75,7 +75,7 @@ transition: all 350ms;
 }
 
 .t1:hover, .t2:hover, .t3:hover, .t4:hover{
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   background-color: rgba(255, 255, 255, 0.83);
   color: black;
 }
@@ -89,13 +89,13 @@ transition: all 350ms;
 }
 
 .divSocialMedia i{
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
   font-size: 3vw;
   margin: 0 2vw 0 2vw;
   transition: all 350m;
 }
 
 .divSocialMedia i:hover{
-  color:white;
+  color:rgb(255, 255, 255);
   transform: scale(1.15);
 }

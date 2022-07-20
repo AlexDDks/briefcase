@@ -38,16 +38,39 @@ div img {
     text-align: center;
     font-size: 5vw;
     color: white;
+
+    white-space: nowrap;
+    border-right: 3px solid rgb(255, 255, 255);
+    width: 6.5ch;
+    overflow: hidden;
+    animation: welcome 2s 1 steps(10), cursor .8s infinite;
+    animation-fill-mode: both;
+    animation-delay: 1s;
 }
 
+@keyframes welcome {0% {width: 0}}
+@keyframes cursor {50% {border-color: transparent}}
+
 .text1 {
+
     margin: 0;
     padding-top: 0px;
     font-family: Orbitron;
     text-align: center;
     font-size: 2.5vw;
     color: white;
+
+    white-space: nowrap;
+    border-right: 3px solid rgb(255, 255, 255);
+    width: 21.8ch;
+    overflow: hidden;
+    animation: texto 3s 1 steps(25), cursor .8s infinite;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
 }
+
+@keyframes texto {0% {width:0}}
+@keyframes cursor {50% {border-color: transparent}}
 
 div button {
     font-family: Orbitron;
