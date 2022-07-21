@@ -43,7 +43,7 @@ div img {
     border-right: 3px solid rgb(255, 255, 255);
     width: 6.5ch;
     overflow: hidden;
-    animation: welcome 2s 1 steps(10), cursor .8s infinite;
+    animation: welcome 1s 1 steps(10), cursor .8s infinite;
     animation-fill-mode: both;
     animation-delay: 1s;
 }
