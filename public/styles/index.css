@@ -43,13 +43,18 @@ div img {
     border-right: 3px solid rgb(255, 255, 255);
     width: 6.5ch;
     overflow: hidden;
-    animation: welcome 1s 1 steps(10), cursor .8s infinite;
+    animation: welcome 1.3s steps(10), cursor .8s infinite;
     animation-fill-mode: both;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
+
 @keyframes welcome {0% {width: 0}}
-@keyframes cursor {50% {border-color: transparent}}
+@keyframes cursor {
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent}
+ }
 
 .text1 {
 
@@ -64,13 +69,17 @@ div img {
     border-right: 3px solid rgb(255, 255, 255);
     width: 21.8ch;
     overflow: hidden;
-    animation: texto 3s 1 steps(25), cursor .8s infinite;
-    animation-delay: 3.5s;
+    animation: texto 2.5s steps(25), cursor .8s infinite;
+    animation-delay: 4.5s;
     animation-fill-mode: both;
 }
 
-@keyframes texto {0% {width:0}}
-@keyframes cursor {50% {border-color: transparent}}
+@keyframes texto {0% {width: 0}}
+@keyframes cursor {
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent}
+ }
 
 div button {
     font-family: Orbitron;
