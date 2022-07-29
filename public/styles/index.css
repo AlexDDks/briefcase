@@ -83,14 +83,11 @@ div button {
     border-radius: 1vw;
     background-color: rgb(20, 29, 46);
     transition: all 450ms;
+    animation: button 10s 1;
    }
 
-.divButton1{
-    animation: button 9.5s 1;
-}
 .divButton2{
-    animation: button 9.5s 1;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     animation-fill-mode: both;
 }
 
@@ -104,9 +101,10 @@ div button {
     60% {opacity: 0%;}
     70% {opacity: 0%;}
     80% {opacity: 0%;}
-    90% {opacity: 70%; background-color:rgb(255, 255, 255)};
-    93% {opacity: 80%; background-color:rgba(180, 180, 220, 0.776)};
-    96% {opacity: 90%; background-color:rgba(112, 116, 199, 0.52)};
+    84% {opacity: 0%;}
+    85% {opacity: 70%; background-color:rgb(255, 255, 255)};
+    90% {opacity: 80%; background-color:rgba(180, 180, 220, 1)};
+    95% {opacity: 90%; background-color:rgba(112, 116, 199, 1)};
     100% {opacity: 100%; background-color: rgb(20, 29, 46);};
  }
 
