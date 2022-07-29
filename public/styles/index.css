@@ -41,7 +41,7 @@ div img {
 
     white-space: nowrap;
     border-right: 3px solid rgb(255, 255, 255);
-    width: 6.5ch;
+    width: 6.6ch;
     overflow: hidden;
     animation: welcome 1.3s steps(10), cursor .8s infinite;
     animation-fill-mode: both;
@@ -61,7 +61,7 @@ div img {
 
     white-space: nowrap;
     border-right: 3px solid rgb(255, 255, 255);
-    width: 21.8ch;
+    width: 22.9ch;
     overflow: hidden;
     animation: texto 2.5s steps(25), cursor .8s infinite;
     animation-delay: 4.5s;
@@ -83,10 +83,18 @@ div button {
     border-radius: 1vw;
     background-color: rgb(20, 29, 46);
     transition: all 450ms;
-    animation: button1 9.5s 1;
+   }
+
+.divButton1{
+    animation: button 9.5s 1;
+}
+.divButton2{
+    animation: button 9.5s 1;
+    animation-delay: 2s;
+    animation-fill-mode: both;
 }
 
-@keyframes button1 {
+@keyframes button {
     0% {opacity: 0%;}
     10% {opacity: 0%;}
     20% {opacity: 0%;}
@@ -96,10 +104,10 @@ div button {
     60% {opacity: 0%;}
     70% {opacity: 0%;}
     80% {opacity: 0%;}
-    90% {opacity: 70%;}
-    93% {opacity: 80%;}
-    96% {opacity: 90%;}
-    100% {opacity: 100%;}
+    90% {opacity: 70%; background-color:rgb(255, 255, 255)};
+    93% {opacity: 80%; background-color:rgba(180, 180, 220, 0.776)};
+    96% {opacity: 90%; background-color:rgba(112, 116, 199, 0.52)};
+    100% {opacity: 100%; background-color: rgb(20, 29, 46);};
  }
 
 
