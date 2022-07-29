@@ -48,13 +48,7 @@ div img {
     animation-delay: 2s;
 }
 
-
 @keyframes welcome {0% {width: 0}}
-@keyframes cursor {
-    0% {border-color: transparent}
-    50% {border-color: white}
-    100% {border-color: transparent}
- }
 
 .text1 {
 
@@ -89,7 +83,25 @@ div button {
     border-radius: 1vw;
     background-color: rgb(20, 29, 46);
     transition: all 450ms;
+    animation: button1 9.5s 1;
 }
+
+@keyframes button1 {
+    0% {opacity: 0%;}
+    10% {opacity: 0%;}
+    20% {opacity: 0%;}
+    30% {opacity: 0%;}
+    40% {opacity: 0%;}
+    50% {opacity: 0%;}
+    60% {opacity: 0%;}
+    70% {opacity: 0%;}
+    80% {opacity: 0%;}
+    90% {opacity: 70%;}
+    93% {opacity: 80%;}
+    96% {opacity: 90%;}
+    100% {opacity: 100%;}
+ }
+
 
 div button:hover {
     background-color: rgba(255, 255, 255, 0.83);
@@ -126,3 +138,4 @@ a:hover {
 .adressId:hover{
     transform: scale(1.1);
 }
+
