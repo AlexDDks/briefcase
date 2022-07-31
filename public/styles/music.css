@@ -86,7 +86,7 @@ header {
     top: -100vh;
     left: 15vw;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
     z-index: 10;

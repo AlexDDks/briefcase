@@ -81,9 +81,9 @@ div button {
     padding: .75vw 1.5vw;
     font-size: 1.5vw;
     border-radius: 1vw;
-    background-color: rgb(20, 29, 46);
+    background-color: rgb(20,29,46);
     transition: all 450ms;
-    animation: button 10s 1;
+    animation: button 9s 1;
    }
 
 .divButton2{
@@ -101,12 +101,13 @@ div button {
     60% {opacity: 0%;}
     70% {opacity: 0%;}
     80% {opacity: 0%;}
-    84% {opacity: 0%;}
-    85% {opacity: 70%; background-color:rgb(255, 255, 255)};
-    90% {opacity: 80%; background-color:rgba(180, 180, 220, 1)};
-    95% {opacity: 90%; background-color:rgba(112, 116, 199, 1)};
-    100% {opacity: 100%; background-color: rgb(20, 29, 46);};
- }
+    87% {opacity: 0%;}
+    88% {opacity: 70%; background-color:rgb(255, 255, 255)};
+    92% {opacity: 80%; background-color:rgba(180, 180, 220, 1)};
+    96% {opacity: 90%; background-color:rgba(112, 116, 199, 1)};
+    100% {opacity: 100%; background-color: rgb(20,29,46)};
+}
+ 
 
 
 div button:hover {

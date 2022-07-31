@@ -85,9 +85,9 @@ header {
     top: -100vh;
     left: 15vw;
     width: 100%;
-    height: 100%;
+    height: 120%;
     max-width: 100vw;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     z-index: 10;
     visibility: hidden;
 
@@ -152,9 +152,10 @@ transition: all 250ms;
 
 .containerAll {
     width: 100%;
+    height: 100%;
     position: relative;
     max-width: 1280px;
-    border-radius: 0.5%;
+    border-radius: 1%;
     overflow: hidden;
 }
 
@@ -171,7 +172,7 @@ body section {
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    margin-bottom: 2vw;
+    /* padding-bottom: 2vw; */
 }
 
 img {
@@ -196,7 +197,7 @@ img {
 
 .pagination {
     position: absolute;
-    bottom: 12%;
+    bottom: 9%;
     left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -312,6 +313,7 @@ input[id="5"]:checked~.pagination .paginationItem[for="5"] {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2vw;
+    margin-top: 2vw;
     justify-content: space-evenly;
 }
 
